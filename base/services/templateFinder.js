@@ -64,7 +64,7 @@ module.exports = function templateFinder(log, createDocMessage) {
 
         if ( !templatePath ) {
           throw new Error(createDocMessage(
-            'No template found./n' +
+            'No template found.\n' +
             'The following template patterns were tried:\n' +
             _.reduce(patternMatchers, function(str, pattern) {
               return str + '  "' + pattern(doc) + '"\n';
